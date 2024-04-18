@@ -39,3 +39,21 @@ JOIN
     Sales.SalesOrderDetail D ON H.SalesOrderID = D.SalesOrderID 
 WHERE 
     H.TerritoryID BETWEEN 1 AND 5;
+```
+## II. Clustering Customer using K-means Algorithms
+
+In this phase, we employed the K-means clustering algorithm to segment customers based on their characteristics. After preprocessing the data, we built a machine learning model using K-means, resulting in distinct customer clusters.
+
+### Dataset Analysis:
+
+#### Original Dataset:
+![Original Dataset](images/original_dataset_kmeans.png)
+
+#### Clustered Dataset:
+![Clustered Dataset](images/clustered_dataset.png)
+
+#### Cluster Statistics:
+![Cluster Statistics](images/clustered_result.png)
+
+#### Characteristics of Each Cluster:
+![Characteristics of Clusters](images/clustered_result_description.png)
