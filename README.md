@@ -7,7 +7,7 @@ This project focuses on data analysis based on the Adventure Works sample databa
 
 ## I. Extract and Process Data To Dataframe based on RFM model
 
-In this phase of the project, we utilized the `Sales.SalesOrderHeader` table to extract and process data for the United States (US) market. The table contains essential fields such as `SalesOrderID`, `OrderDate`, `CustomerID`, `SubTotal`, and `TerritoryID`. By filtering records for the US market, consisting of 12,041 order records, we computed RFM (Recency, Frequency, Monetary) values for each customer.
+In this phase of the project, I utilized the `Sales.SalesOrderHeader` table to extract and process data for the United States (US) market. The table contains essential fields such as `SalesOrderID`, `OrderDate`, `CustomerID`, `SubTotal`, and `TerritoryID`. By filtering records for the US market, consisting of 12,041 order records, we computed RFM (Recency, Frequency, Monetary) values for each customer.
 
 ### SQL Queries Used:
 
@@ -25,6 +25,9 @@ WHERE
     TerritoryID BETWEEN 1 AND 5 
 GROUP BY 
     CustomerID;
+```
+#### Invoice Dataframe for analyst
+```sql
 CREATE OR ALTER VIEW INVOICE_DATASET AS 
 SELECT 
     H.CustomerID, 
@@ -50,10 +53,10 @@ In this phase, we employed the K-means clustering algorithm to segment customers
 ![Original Dataset](images/original_dataset_kmeans.png)
 
 #### Clustered Dataset:
-![Clustered Dataset](images/clustered_dataset.png)
+![Clustered Dataset](images/clusterd_dataset.png)
 
 #### Cluster Statistics:
-![Cluster Statistics](images/clustered_result.png)
+![Cluster Statistics](images/clusserd_result.png)
 
 #### Characteristics of Each Cluster:
-![Characteristics of Clusters](images/clustered_result_description.png)
+![Characteristics of Clusters](images/clusserd_result_description.png)
