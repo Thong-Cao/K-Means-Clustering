@@ -55,8 +55,5 @@ In this phase, we employed the K-means clustering algorithm to segment customers
 #### Clustered Dataset:
 ![Clustered Dataset](images/clusterd_dataset.png)
 
-#### Cluster Statistics:
-![Cluster Statistics](images/clusserd_result.png)
-
 #### Characteristics of Each Cluster:
 ![Characteristics of Clusters](images/clusserd_result_description.png)
